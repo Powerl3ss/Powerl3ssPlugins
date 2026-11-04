@@ -1,9 +1,12 @@
 name: Update repo.json
 
 # Reconstruit le repo.json commun à partir du repo.json de chaque plugin.
-# Rien n'est à changer dans les dépôts des plugins : ce workflow va lire ce qu'ils publient.
+# Chaque plugin déclenche ce workflow dès qu'il publie une version (plugin-released).
+# Le passage planifié sert de filet de sécurité si cette notification n'arrive pas.
 
 on:
+  repository_dispatch:
+    types: [ plugin-released ]
   schedule:
     - cron: '7,22,37,52 * * * *'
   push:

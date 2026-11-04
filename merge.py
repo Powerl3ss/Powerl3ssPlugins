@@ -5,12 +5,13 @@ Si un dépôt est illisible ou invalide, le script s'arrête sans rien écrire :
 le repo.json déjà publié reste en place plutôt que de perdre un plugin.
 """
 import json
+import subprocess
 import sys
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-RAW_URL = "https://raw.githubusercontent.com/{repo}/main/repo.json"
+RAW_URL = "https://raw.githubusercontent.com/{repo}/{commit}/repo.json"
 REQUIRED_KEYS = ("InternalName", "Name", "AssemblyVersion", "DownloadLinkInstall")
 
 
@@ -19,8 +20,21 @@ def read_repos():
     return [line.strip() for line in lines if line.strip() and not line.startswith("#")]
 
 
+def latest_commit(repo):
+    output = subprocess.run(
+        ["git", "ls-remote", f"https://github.com/{repo}", "refs/heads/main"],
+        capture_output=True, text=True, check=True, timeout=60,
+    ).stdout
+    if not output:
+        raise ValueError("branche main introuvable")
+    return output.split()[0]
+
+
 def fetch_manifests(repo):
-    with urllib.request.urlopen(RAW_URL.format(repo=repo), timeout=30) as response:
+    # Lecture au commit exact : l'adresse .../main/repo.json peut rester en cache 5 minutes,
+    # et une version qui vient d'être publiée serait alors ignorée.
+    url = RAW_URL.format(repo=repo, commit=latest_commit(repo))
+    with urllib.request.urlopen(url, timeout=30) as response:
         # utf-8-sig : accepte un repo.json écrit avec un BOM par PowerShell.
         manifests = json.loads(response.read().decode("utf-8-sig"))
 

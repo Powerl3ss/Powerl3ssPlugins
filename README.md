@@ -31,6 +31,13 @@ Un plugin installé reste rattaché au lien depuis lequel il a été installé. 
 
 ## Ajouter un plugin
 
-Ajoute son dépôt dans `plugins.txt`. Le dépôt doit publier un `repo.json` à la racine de sa branche `main`.
+1. Ajoute son dépôt dans `plugins.txt`. Il doit publier un `repo.json` à la racine de sa branche `main`.
+2. Ajoute le secret `PLUGINS_REPO_TOKEN` dans ce dépôt, puis copie l'étape `Notify shared plugin repository` à la fin de son workflow de build.
 
-`repo.json` est généré automatiquement toutes les 15 minutes environ : ne le modifie pas à la main.
+## Mise à jour de `repo.json`
+
+`repo.json` est généré automatiquement : ne le modifie pas à la main.
+
+Chaque plugin prévient ce dépôt dès qu'il publie une version. Un passage planifié toutes les 15 minutes environ sert de filet de sécurité. Tu peux aussi lancer **Run workflow** dans l'onglet **Actions**.
+
+Le secret `PLUGINS_REPO_TOKEN` est un token GitHub limité à ce dépôt, avec la permission **Contents** en lecture et écriture. Quand il expire, crée-en un nouveau et remplace le secret dans chaque plugin.
