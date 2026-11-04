@@ -3,7 +3,7 @@
     "Author": "Powerl3ss",
     "Name": "DailyToDo",
     "InternalName": "DailyTodo",
-    "AssemblyVersion": "0.7.24.0",
+    "AssemblyVersion": "0.7.25.0",
     "Description": "",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Powerl3ss/DailyTodo",
@@ -27,7 +27,7 @@
     "IconUrl": "https://raw.githubusercontent.com/Powerl3ss/DailyTodo/main/DailyTodo/images/icon.png",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdate": 1793757543
+    "LastUpdate": 1793824485
   },
   {
     "Author": "Powerl3ss",
