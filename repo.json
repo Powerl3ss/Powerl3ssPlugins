@@ -3,7 +3,7 @@
     "Author": "Powerl3ss",
     "Name": "DPSmeter",
     "InternalName": "DPSmeter",
-    "AssemblyVersion": "0.5.15.0",
+    "AssemblyVersion": "0.5.16.0",
     "Description": "",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Powerl3ss/DPSmeter",
@@ -27,13 +27,13 @@
     "IconUrl": "https://raw.githubusercontent.com/Powerl3ss/DPSmeter/main/DPSmeter/images/icon.png",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdate": 1794079526
+    "LastUpdate": 1794080018
   },
   {
     "Author": "Powerl3ss",
     "Name": "MiniRadar",
     "InternalName": "MiniRadar",
-    "AssemblyVersion": "0.2.1.0",
+    "AssemblyVersion": "0.2.2.0",
     "Description": "",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Powerl3ss/MiniRadar",
@@ -57,13 +57,13 @@
     "IconUrl": "https://raw.githubusercontent.com/Powerl3ss/MiniRadar/main/MiniRadar/images/icon.png",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdate": 1794079531
+    "LastUpdate": 1794080017
   },
   {
     "Author": "Powerl3ss",
     "Name": "BetterChat",
     "InternalName": "BetterChat",
-    "AssemblyVersion": "0.3.11.0",
+    "AssemblyVersion": "0.3.12.0",
     "Description": "",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Powerl3ss/BetterChat",
@@ -87,6 +87,6 @@
     "IconUrl": "https://raw.githubusercontent.com/Powerl3ss/BetterChat/main/BetterChat/images/icon.png",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdate": 1794079536
+    "LastUpdate": 1794080017
   }
 ]
