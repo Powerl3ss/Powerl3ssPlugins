@@ -1,36 +1,6 @@
 [
   {
     "Author": "Powerl3ss",
-    "Name": "DailyToDo",
-    "InternalName": "DailyTodo",
-    "AssemblyVersion": "0.7.25.0",
-    "Description": "",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Powerl3ss/DailyTodo",
-    "Tags": [
-      "todo",
-      "checklist",
-      "daily",
-      "weekly",
-      "hud"
-    ],
-    "DalamudApiLevel": 15,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "Punchline": "Une liste de tâches journalières et hebdomadaires en HUD, entièrement configurable.",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Powerl3ss/DailyTodo/releases/latest/download/latest.zip",
-    "DownloadLinkTesting": "https://github.com/Powerl3ss/DailyTodo/releases/latest/download/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Powerl3ss/DailyTodo/releases/latest/download/latest.zip",
-    "IconUrl": "https://raw.githubusercontent.com/Powerl3ss/DailyTodo/main/DailyTodo/images/icon.png",
-    "IsHide": false,
-    "IsTestingExclusive": false,
-    "LastUpdate": 1793824485
-  },
-  {
-    "Author": "Powerl3ss",
     "Name": "DPSmeter",
     "InternalName": "DPSmeter",
     "AssemblyVersion": "0.5.14.0",
