@@ -3,7 +3,7 @@
     "Author": "Powerl3ss",
     "Name": "DPSmeter",
     "InternalName": "DPSmeter",
-    "AssemblyVersion": "0.5.18.0",
+    "AssemblyVersion": "0.5.19.0",
     "Description": "",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Powerl3ss/DPSmeter",
@@ -27,13 +27,13 @@
     "IconUrl": "https://raw.githubusercontent.com/Powerl3ss/DPSmeter/main/DPSmeter/images/icon.png",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdate": 1794187936
+    "LastUpdate": 1794188270
   },
   {
     "Author": "Powerl3ss",
     "Name": "MiniRadar",
     "InternalName": "MiniRadar",
-    "AssemblyVersion": "0.2.3.0",
+    "AssemblyVersion": "0.2.4.0",
     "Description": "",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Powerl3ss/MiniRadar",
@@ -57,7 +57,7 @@
     "IconUrl": "https://raw.githubusercontent.com/Powerl3ss/MiniRadar/main/MiniRadar/images/icon.png",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdate": 1794188046
+    "LastUpdate": 1794188265
   },
   {
     "Author": "Powerl3ss",
