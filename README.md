@@ -17,6 +17,5 @@ Une seule ligne à ajouter dans Dalamud pour accéder à tous mes plugins pour F
 
 | Plugin | Description |
 | --- | --- |
-| [DPSmeter](https://github.com/Powerl3ss/DPSmeter) | Tes dégâts et ceux de ton groupe en direct, dans un HUD configurable. |
 | [MiniRadar](https://github.com/Powerl3ss/MiniRadar) | Les joueurs autour de toi sur la minimap : amis, compagnie et autres, chacun sa couleur. |
 | [BetterChat](https://github.com/Powerl3ss/BetterChat) | Un chat moderne à la place du chat du jeu : onglets, recherche, liens cliquables, mentions. |
