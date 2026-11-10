@@ -1,3 +1,4 @@
 # Un dépôt GitHub par ligne. Chaque dépôt doit avoir un repo.json à la racine de sa branche main.
 Powerl3ss/MiniRadar
 Powerl3ss/BetterChat
+Powerl3ss/MarketTip
